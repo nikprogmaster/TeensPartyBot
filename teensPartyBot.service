@@ -1,0 +1,14 @@
+[Unit]
+Description=Teens Party Bot
+After=network.target
+
+[Service]
+User=nikita
+Group=nikita
+
+WorkingDirectory=/home/nikita/TeensPartyBot/
+Environment="PYTHONPATH=/home/nikita/TeensPartyBot/"
+ExecStart=/usr/bin/python3 /home/nikita/TeensPartyBot/main.py
+
+[Install]
+WantedBy=multi-user.target
