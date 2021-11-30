@@ -12,7 +12,7 @@ BOT_INTERVAL = 3
 BOT_TIMEOUT = 30
 
 bot = telebot.TeleBot(BOT_TOKEN)
-party_date = datetime.datetime.today().replace(2021, 11, 26, 0, 0, 0)
+party_date = datetime.datetime.today().replace(2021, 12, 4, 0, 0, 0)
 memSender = None
 all_memes = []
 
@@ -154,3 +154,4 @@ def bot_actions():
                 memSender = None
                 bot.send_message(message.chat.id, "Игра окончена", reply_markup=keyboard.getStartKeyboard())
 
+bot_polling()
