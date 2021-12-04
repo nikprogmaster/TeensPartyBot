@@ -25,7 +25,11 @@ STANDART_INCORRECT_TIME_BOT_ANSWER = "Прости, еще рано. Мероп�
 
 
 def init():
-    global main_info, timetable, maintainer, zones
+    global main_info, timetable, maintainer, zones, all_memes
+    main_info = ""
+    timetable = ""
+    zones = ""
+    all_memes = []
 
     f = open('main_info.txt', 'r', encoding="utf-8")
     for line in f:
